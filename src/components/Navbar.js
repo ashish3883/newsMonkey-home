@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 
 export class Navbar extends Component {
@@ -33,14 +34,14 @@ export class Navbar extends Component {
                     Home
                   </a>
                 </li>
-                <li className="nav-item"><a className="nav-link" href="/about">Abou Us</a></li>
-                <li className="nav-item"><a className="nav-link" href="/about">Business</a></li>
-                <li className="nav-item"><a className="nav-link" href="/about">Entertainment</a></li>
-                <li className="nav-item"><a className="nav-link" href="/about">General</a></li>
-                <li className="nav-item"><a className="nav-link" href="/about">Health</a></li>
-                <li className="nav-item"><a className="nav-link" href="/about">Science</a></li>
-                <li className="nav-item"><a className="nav-link" href="/about">Sports</a></li>
-                <li className="nav-item"><a className="nav-link" href="/about">Technology</a></li>
+                <li className="nav-item"><Link className="nav-link" to="/about">About Us</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/business">Business</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/entertainment">Entertainment</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/general">General</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/health">Health</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/science">Science</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/sports">Sports</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/technology">Technology</Link></li>
               </ul>
               <form className="d-flex" role="search">
                 <input
