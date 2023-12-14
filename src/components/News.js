@@ -69,20 +69,13 @@ export class News extends Component {
             return (
               <div className="col-md-4" key={el.url}>
                 <NewsItem
-                  title={
-                    el.title ? el.title.slice(0, 60) : "Title Not Available"
-                  }
-                  description={
-                    el.description
-                      ? el.description.slice(0, 60)
-                      : "Description Not Available"
-                  }
-                  imgUrl={
-                    el.urlToImage
-                      ? el.urlToImage
-                      : "https://t3.ftcdn.net/jpg/03/27/55/60/360_F_327556002_99c7QmZmwocLwF7ywQ68ChZaBry1DbtD.jpg"
-                  }
+                  title={el.title ? el.title.slice(0, 60) : "Title Not Available"}
+                  description={el.description? el.description.slice(0, 60): "Description Not Available"}
+                  imgUrl={el.urlToImage? el.urlToImage: "https://t3.ftcdn.net/jpg/03/27/55/60/360_F_327556002_99c7QmZmwocLwF7ywQ68ChZaBry1DbtD.jpg"}
                   newsUrl={el.url ? el.url : "Link Not Available"}
+                  author={el.author}
+                  date={el.publishedAt}
+                  source={el.source.name}
                 />
               </div>
             );
